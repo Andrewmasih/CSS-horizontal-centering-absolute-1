@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Horizontal absolute centering</title>
+    <style>
+      .container {
+      	/* Try changing the value to
+      	right or left and see what happens */
+        text-align: center;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        display: block;
+        background-color: #e84610;
+        position: absolute;
+        /* Remove only the left property to 
+        see how the element is pushed to the right */
+        left: 0;
+        right: 0;
+        /* Remove only the right property to 
+        see how the element is pushed to the left. 
+        Keep the left: 0 */
+        margin: 0 auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
